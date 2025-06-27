@@ -25,11 +25,26 @@ git checkout release/0.31
  4.test the mpv
 ```
 # could copy the ./build/mpv file to your gameplayer and to retry:
-sudo chmod +x ./mpv
+sudo chmod +x /opt/app/mpv
 # to test dynamic link is ok 
-ldd ./mpv
+ldd /opt/app/mpv
 # to test file play
-./mpv -vo=drm --input xxx.mp4
+/opt/app/mpv -vo=drm --input xxx.mp4
 # to test gamepad/joystick is ok 
-./mpv --input-test  --input-gamepad --idle
+/opt/app/mpv --input-test  --input-gamepad --idle
 ```
+# 5.update the es_system.conf and restart the emulationstation
+vi  /etc/emulationstation/es_systems.cfg
+update the fllowing content:
+```xml
+ <system>
+         <name>videos</name>
+         <fullname>Movies</fullname>
+         <path>/roms2/movies/</path>
+         <extension>.mp4 .MP4 .avi .AVI .mpeg .MPEG .mkv .MKV .mov .MOV</extension>
+         <command>sudo perfmax %GOVERNOR% %ROM%; /opt/app/mpv -vo=drm --input-gamepad %ROM%; sudo perfnorm</command>
+         <platform>videos</platform>
+         <theme>vhs</theme>
+</system>
+```
+# 6.put the mpv.conf and input.conf to ~/.config/mpv
