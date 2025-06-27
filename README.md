@@ -1,4 +1,5 @@
 # MPV for arkos
+by the way, if you use the binary file in the release, ignore the step 1-4
 1.we'd better do this in a aarch64 docker env（I'm not suggestion that you do these on your gameplayer）
 ```
 # pull a ubuntu19.10 docker images
@@ -47,4 +48,4 @@ update the fllowing content:
          <theme>vhs</theme>
 </system>
 ```
-# 6.put the mpv.conf and input.conf to ~/.config/mpv
+6.put the mpv.conf and input.conf to ~/.config/mpv
