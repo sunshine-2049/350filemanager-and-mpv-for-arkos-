@@ -33,7 +33,7 @@ ldd /opt/app/mpv
 # to test gamepad/joystick is ok 
 /opt/app/mpv --input-test  --input-gamepad --idle
 ```
-# 5.update the es_system.conf and restart the emulationstation
+5.update the es_system.conf and restart the emulationstation
 vi  /etc/emulationstation/es_systems.cfg
 update the fllowing content:
 ```xml
