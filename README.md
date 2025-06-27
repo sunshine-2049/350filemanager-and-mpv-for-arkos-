@@ -1,6 +1,5 @@
 # MPV for arkos
-by the way, if you use the binary file in the release, ignore the step 1-4
-\\
+`(by the way, if you use the binary file in the release, ignore the step 1-4)`<br/>
 1.we'd better do this in a aarch64 docker env（I'm not suggestion that you do these on your gameplayer）
 ```
 # pull a ubuntu19.10 docker images
