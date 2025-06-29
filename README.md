@@ -50,7 +50,7 @@ update the fllowing content:
 ```
 6.put the mpv.conf and input.conf to ~/.config/mpv
 
-# 2.Use 350file to show medias and call the mpv program to play
+# 2.Use 350file to show media and call the mpv program to play
 1.such an example:
 ```shell
 /opt/app/350file/350file \
