@@ -1,4 +1,4 @@
-# Build MPV for arkos
+# 1.Build MPV for arkos
 `(by the way, if you use the binary file in the release, ignore the step 1-4)`<br/>
 1.we'd better do this in a aarch64 docker env（I'm not suggestion that you do these on your gameplayer）
 ```
@@ -50,7 +50,7 @@ update the fllowing content:
 ```
 6.put the mpv.conf and input.conf to ~/.config/mpv
 
-# Use 350file to show medias and call the mpv program to play
+# 2.Use 350file to show medias and call the mpv program to play
 1.such an example:
 ```shell
 /opt/app/350file/350file \
