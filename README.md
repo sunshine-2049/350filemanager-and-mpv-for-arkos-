@@ -1,4 +1,4 @@
-# MPV for arkos
+# Build MPV for arkos
 `(by the way, if you use the binary file in the release, ignore the step 1-4)`<br/>
 1.we'd better do this in a aarch64 docker env（I'm not suggestion that you do these on your gameplayer）
 ```
@@ -49,3 +49,25 @@ update the fllowing content:
 </system>
 ```
 6.put the mpv.conf and input.conf to ~/.config/mpv
+
+# Use 350file to show medias and call the mpv program to play
+1.such an example:
+```shell
+/opt/app/350file/350file \
+  --conf='/opt/app/350file/config.json' \
+  --start='/roms2/media/movies' \
+  --cmds='/opt/app/mpv --input-gamepad --vo=drm  $__FILE__' \
+  --filters='mkv,mov,flv,mp4,avi,wmv,ts,mpg,mpeg,3gp,rmvb'
+```
+2.cmd arguments
+to --conf option, set the path of config file
+to --start option, set the path of 350files up
+to --cmds option, set the commands when the game controller click the B button
+to --filters option, the 350 file only shows these in with the extendname string
+3.buttons：
+left/l1：the previous page 
+right/r1: the next page
+up: the previous file
+down: the next file
+b: to exec the command 
+a: back to the path when 350file begining
