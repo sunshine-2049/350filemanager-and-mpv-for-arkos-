@@ -1,0 +1,1 @@
+/opt/app/350file/350file --conf='/opt/app/350file/config.json' --start='/roms2/media/movies' --cmds='/opt/app/mpv --input-gamepad --vo=drm  $__FILE__' --filters='mkv,mov,flv,mp4,avi,wmv,ts,mpg,mpeg,3gp,rmvb'
