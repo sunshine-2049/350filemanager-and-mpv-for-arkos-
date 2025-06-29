@@ -76,4 +76,4 @@ b: to exec the command
 a: back to the path when 350file begining
 ```
 
-Have func!
+Have fun!
