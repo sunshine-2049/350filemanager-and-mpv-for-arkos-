@@ -60,14 +60,18 @@ update the fllowing content:
   --filters='mkv,mov,flv,mp4,avi,wmv,ts,mpg,mpeg,3gp,rmvb'
 ```
 2.cmd arguments
+```
 to --conf option, set the path of config file
 to --start option, set the path of 350files up
 to --cmds option, set the commands when the game controller click the B button
 to --filters option, the 350 file only shows these in with the extendname string
+```
 3.buttons：
+```
 left/l1：the previous page 
 right/r1: the next page
 up: the previous file
 down: the next file
 b: to exec the command 
 a: back to the path when 350file begining
+```
